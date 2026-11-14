@@ -1,84 +1,286 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AK eSports is an esports organization managing Chakravyuh eSports and Rudrani eSports.">
-  <meta name="keywords" content="AK eSports, Chakravyuh eSports, Rudrani eSports, Indian esports">
-  <meta name="author" content="AK eSports">
-  <title>AK eSports | Official Esports Organization</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{background:#090909;color:#fff;font-family:Arial,sans-serif;line-height:1.6}
-    header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #292929}
-    .logo{font-size:25px;font-weight:900;color:#e8bd65}
-    nav a{color:#ddd;text-decoration:none;margin-left:20px;font-size:14px}
-    .hero{text-align:center;padding:100px 20px 90px;background:radial-gradient(ellipse at top,#302310,#090909 65%)}
-    .tag{color:#e8bd65;letter-spacing:4px;font-size:12px;font-weight:bold}
-    h1{font-size:clamp(38px,8vw,75px);line-height:1.1;margin:22px 0}
-    .gold{color:#e8bd65}
-    .hero p{color:#bbb;max-width:600px;margin:auto}
-    .btn{display:inline-block;margin-top:28px;padding:12px 25px;background:#e8bd65;color:#111;text-decoration:none;font-weight:bold;border-radius:4px}
-    section{padding:75px 8%}
-    .section-title{text-align:center;font-size:32px;margin-bottom:15px}
-    .sub{text-align:center;color:#aaa;margin-bottom:40px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-    .card{background:#151515;border:1px solid #34302a;border-radius:12px;padding:30px;text-align:center}
-    .card h3{color:#e8bd65;font-size:23px;margin-bottom:12px}
-    .card p{color:#aaa;font-size:14px}
-    .card a{color:#e8bd65;display:inline-block;margin-top:18px;text-decoration:none}
-    .about{background:#111;text-align:center}
-    .about p{max-width:750px;margin:auto;color:#bbb}
-    footer{text-align:center;padding:28px;color:#888;border-top:1px solid #292929;font-size:13px}
-    @media(max-width:600px){header{padding:18px 5%;flex-direction:column;gap:12px}nav a{margin:0 8px}section{padding:55px 6%}}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AK eSPORTS | Official Indian Esports Organization</title>
+  <meta name="description" content="AK eSPORTS is an Indian esports organization built to discover talent, develop players and manage competitive teams. Home of Chakravyuh eSports and Rudrani eSports.">
+  <meta name="keywords" content="AK eSports, Indian esports organization, Chakravyuh eSports, Rudrani eSports, esports recruitment India">
+  <meta name="theme-color" content="#0a0a0a">
+  <!-- TODO: replace with your real deployed URL -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/ak-esports/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AK eSPORTS">
+  <meta property="og:title" content="AK eSPORTS | BUILD. COMPETE. DOMINATE.">
+  <meta property="og:description" content="Indian esports organization managing Chakravyuh eSports and Rudrani eSports.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/ak-esports/">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/ak-esports/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AK eSPORTS | BUILD. COMPETE. DOMINATE.">
+  <meta name="twitter:description" content="Indian esports organization managing Chakravyuh eSports and Rudrani eSports.">
+  <meta name="twitter:image" content="https://YOUR-USERNAME.github.io/ak-esports/og-image.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Cpath d='M12 50 28 14h8l16 36h-9l-3-8H24l-3 8zm15-16h10l-5-13z' fill='%23d4af37'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AK eSPORTS",
+    "alternateName": "AK eSports",
+    "description": "Indian esports organization focused on talent discovery, player development and competitive team management.",
+    "url": "https://YOUR-USERNAME.github.io/ak-esports/",
+    "slogan": "BUILD. COMPETE. DOMINATE.",
+    "areaServed": "IN",
+    "subOrganization": [
+      { "@type": "Organization", "name": "Chakravyuh eSports" },
+      { "@type": "Organization", "name": "Rudrani eSports" }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">AK eSPORTS</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#divisions">Divisions</a>
-      <a href="#about">About</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="AK eSPORTS home">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 54 27 10h10l19 44H45l-4-10H23l-4 10zm18-22h12l-6-15z" fill="currentColor"/></svg>
+        <span class="brand__text">AK <span>eSPORTS</span></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#teams">Teams</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#recruitment">Recruitment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="hero" id="home">
-      <div class="tag">THE OFFICIAL ESPORTS ORGANIZATION</div>
-      <h1>BUILD. COMPETE.<br><span class="gold">DOMINATE.</span></h1>
-      <p>One organization. Two competitive divisions. One vision. Welcome to AK eSports.</p>
-      <a class="btn" href="#divisions">EXPLORE OUR DIVISIONS</a>
-    </div>
-
-    <section id="divisions">
-      <h2 class="section-title">OUR <span class="gold">DIVISIONS</span></h2>
-      <p class="sub">Different identities. One organization.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>CHAKRAVYUH eSPORTS</h3>
-          <p>Our competitive esports division, focused on player development, tournaments and competitive excellence.</p>
-          <a href="https://www.instagram.com/chakravyuh.esports/" target="_blank">Instagram ↗</a>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+        <svg class="hero__emblem" viewBox="0 0 400 400"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140" stroke-dasharray="4 10"/><polygon points="200,30 347,115 347,285 200,370 53,285 53,115"/><polygon points="200,80 304,140 304,260 200,320 96,260 96,140" opacity=".5"/></g></svg>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Indian Esports Organization</p>
+        <h1 class="hero__title reveal">WE ARE <span class="gold">AK eSPORTS</span></h1>
+        <p class="hero__sub reveal">BUILD. COMPETE. DOMINATE.</p>
+        <p class="hero__desc reveal">An esports organization built to discover talent, develop competitive players, manage teams, and create opportunities in the Indian esports ecosystem.</p>
+        <div class="hero__cta reveal">
+          <a href="#divisions" class="btn btn--gold">Explore Our Divisions</a>
+          <a href="#recruitment" class="btn btn--ghost">Join Our Organization</a>
         </div>
-        <div class="card">
-          <h3>RUDRANI eSPORTS</h3>
-          <p>Our female esports division, building opportunities and a competitive platform for women gamers.</p>
-          <a href="#contact">Coming Soon</a>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">About</p>
+          <h2>The Parent <span class="gold">Organization</span></h2>
+          <p class="lead">AK eSPORTS is an esports management organization focused on talent discovery, player development, competitive team management, tournament participation, and community growth.</p>
+        </header>
+        <ul class="focus-grid">
+          <li class="focus reveal"><span class="focus__num">01</span><h3>Talent Discovery</h3><p>Finding raw skill and giving it a path.</p></li>
+          <li class="focus reveal"><span class="focus__num">02</span><h3>Player Development</h3><p>Structured growth for every competitor.</p></li>
+          <li class="focus reveal"><span class="focus__num">03</span><h3>Competitive Management</h3><p>Rosters, roles and team discipline.</p></li>
+          <li class="focus reveal"><span class="focus__num">04</span><h3>Tournament Operations</h3><p>Preparing squads for competitive play.</p></li>
+          <li class="focus reveal"><span class="focus__num">05</span><h3>Community Building</h3><p>A home for Indian gamers to belong.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DIVISIONS -->
+    <section class="section section--alt" id="divisions">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Divisions</p>
+          <h2>Two Divisions. <span class="gold">One Organization.</span></h2>
+          <p class="lead">Chakravyuh eSports and Rudrani eSports both operate under AK eSPORTS.</p>
+        </header>
+        <div class="division-grid">
+          <article class="division division--chakra reveal">
+            <div class="division__logo" role="img" aria-label="Chakravyuh eSports logo placeholder">
+              <svg viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="27"/><circle cx="50" cy="50" r="14"/><path d="M50 10v14M90 50H76M50 90V76M10 50h14" stroke-linecap="round"/></g></svg>
+              <small>LOGO PLACEHOLDER</small>
+            </div>
+            <p class="division__type">Competitive Esports Division</p>
+            <h3>CHAKRAVYUH <span>eSPORTS</span></h3>
+            <p class="division__tag">“BREAK THE CIRCLE.”</p>
+            <p>Built for competitive excellence, Chakravyuh eSports focuses on discovering skilled players, developing competitive squads, and representing the organization in esports tournaments.</p>
+            <div class="division__actions">
+              <button class="btn btn--gold" data-division="chakravyuh">Explore Division</button>
+              <a class="icon-link" data-link="instagramChakravyuh" href="#" aria-label="Chakravyuh eSports on Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="division division--rudrani reveal">
+            <div class="division__logo" role="img" aria-label="Rudrani eSports logo placeholder">
+              <svg viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M50 8 88 30v40L50 92 12 70V30z"/><path d="M50 26 70 38v24L50 74 30 62V38z"/><path d="M50 8v18M88 30 70 38M88 70 70 62M50 92V74M12 70l18-8M12 30l18 8" stroke-linecap="round"/></g></svg>
+              <small>LOGO PLACEHOLDER</small>
+            </div>
+            <p class="division__type">Female Esports Division</p>
+            <h3>RUDRANI <span>eSPORTS</span></h3>
+            <p>Rudrani eSports aims to create opportunities for female gamers through competitive participation, player development, recruitment, and community growth.</p>
+            <div class="division__actions">
+              <button class="btn btn--gold" data-division="rudrani">Explore Division</button>
+              <a class="icon-link" data-link="instagramRudrani" href="#" aria-label="Rudrani eSports on Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <h2 class="section-title">ABOUT <span class="gold">AK eSPORTS</span></h2>
-      <p>AK eSports is the parent organization behind Chakravyuh eSports and Rudrani eSports. Our vision is to build a structured esports ecosystem through talent discovery, team management and competitive opportunities.</p>
+    <!-- TEAMS -->
+    <section class="section" id="teams">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Teams &amp; Players</p>
+          <h2>Our <span class="gold">Rosters</span></h2>
+          <p class="lead">Rosters are managed in <code>script.js</code>. Cards marked <b>PLACEHOLDER</b> are not real players.</p>
+        </header>
+        <div class="tabs reveal" role="tablist" aria-label="Filter by division">
+          <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="chakravyuh">Chakravyuh</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="rudrani">Rudrani</button>
+        </div>
+        <div id="teamsRoot" class="teams-root" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section--alt" id="achievements">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Achievements &amp; Tournaments</p>
+          <h2>Our <span class="gold">Journey</span></h2>
+        </header>
+        <div id="achievementsRoot" class="reveal"></div>
+      </div>
+    </section>
+
+    <!-- RECRUITMENT -->
+    <section class="section recruit" id="recruitment">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Recruitment</p>
+          <h2>YOUR JOURNEY <span class="gold">STARTS HERE.</span></h2>
+          <p class="lead">We are always looking for dedicated players, creators, managers, moderators, and talented individuals who want to grow with AK eSPORTS.</p>
+        </header>
+        <ul class="role-grid">
+          <li class="role reveal">Competitive Players</li>
+          <li class="role reveal">Team Managers</li>
+          <li class="role reveal">Content Creators</li>
+          <li class="role reveal">Community Managers</li>
+          <li class="role reveal">Moderators</li>
+          <li class="role reveal">Tournament Staff</li>
+        </ul>
+        <div class="center reveal"><a href="#" data-link="applyUrl" class="btn btn--gold btn--lg">Apply Now</a></div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section section--alt" id="news">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">News &amp; Updates</p>
+          <h2>Latest <span class="gold">Updates</span></h2>
+        </header>
+        <div class="news-grid" id="newsRoot"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Get In <span class="gold">Touch</span></h2>
+          <p class="lead">Partnerships, recruitment questions or general enquiries — reach out.</p>
+          <ul class="contact__list">
+            <li><span>Business Email</span><a href="#" data-link="email" id="emailLink">business@example.com (placeholder)</a></li>
+            <li><span>Instagram</span><a href="#" data-link="instagramMain">AK eSPORTS</a></li>
+            <li><span>YouTube</span><a href="#" data-link="youtube">AK eSPORTS Channel</a></li>
+            <li><span>Discord</span><a href="#" data-link="discord">Join the server</a></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2">
+            <small class="error" id="nameErr" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error" id="emailErr" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required minlength="3">
+            <small class="error" id="subjectErr" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <small class="error" id="messageErr" role="alert"></small>
+          </div>
+          <button type="submit" class="btn btn--gold">Send Message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer id="contact">
-    © 2026 AK eSports. All Rights Reserved.
-    <br>Official Parent Organization
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand" aria-label="AK eSPORTS home">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 54 27 10h10l19 44H45l-4-10H23l-4 10zm18-22h12l-6-15z" fill="currentColor"/></svg>
+          <span class="brand__text">AK <span>eSPORTS</span></span>
+        </a>
+        <p class="footer__desc">An Indian esports organization focused on talent discovery, player development and competitive team management.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Navigate</h4>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#divisions">Divisions</a><a href="#teams">Teams</a><a href="#achievements">Achievements</a><a href="#recruitment">Recruitment</a><a href="#contact">Contact</a>
+      </nav>
+      <div>
+        <h4>Divisions</h4>
+        <a href="#divisions" data-division="chakravyuh">Chakravyuh eSports</a>
+        <a href="#divisions" data-division="rudrani">Rudrani eSports</a>
+        <h4 class="mt">Follow</h4>
+        <div class="socials">
+          <a class="icon-link" data-link="instagramMain" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a class="icon-link" data-link="youtube" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg></a>
+          <a class="icon-link" data-link="discord" href="#" aria-label="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6c2-1.200 4-1.800 7-1.800S17 4.800 19 6c1.500 3 2.200 6 2 10-1.500 1.200-3 1.800-4.500 2.200l-1-1.700M5 6C3.500 9 2.800 12 3 16c1.500 1.200 3 1.800 4.500 2.200l1-1.700M8 16.500c2.500.7 5.500.7 8 0" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="12" r="1.300" fill="currentColor"/><circle cx="15" cy="12" r="1.300" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bar">
+      <p>&copy; <span id="year"></span> AK eSPORTS. All rights reserved.</p>
+    </div>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
 </html>
